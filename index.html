@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton Score Checker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Badminton Score Checker</h1>
+        <div class="teams">
+            <input type="text" id="team1-name" placeholder="Team 1 Name">
+            <span class="vs">VS</span>
+            <input type="text" id="team2-name" placeholder="Team 2 Name">
+        </div>
+        <div class="scoreboard">
+            <div class="team-score">
+                <span id="team1-score">0</span>
+                <button id="team1-add-button" class="team1-button">+1</button>
+                <button id="team1-subtract-button" class="team1-button">-1</button>
+            </div>
+            <div class="team-score">
+                <span id="team2-score">0</span>
+                <button id="team2-add-button" class="team2-button">+1</button>
+                <button id="team2-subtract-button" class="team2-button">-1</button>
+            </div>
+        </div>
+        <div class="timer">
+            <span id="timer-display">00:00</span>
+            <button id="start-stop-button" class="timer-button">Start</button>
+        </div>
+        <div class="winner">
+            <input type="text" id="winner-name" placeholder="Winner Name">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
